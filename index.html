@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registreringsformulär</h1>
+
+    <form id="registerForm" novalidate>
+        <label for="name">Namn</label>
+        <input id="name" name="name" type="text" aria-invalid="false">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" aria-invalid="false">
+
+        <label for="password">Lösenord</label>
+        <input id="password" name="password" type="password" aria-invalid="false">
+
+        <button type="submit">Skicka</button>
+
+        <p id="message" aria-live="polite"></p>
+    </form>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
